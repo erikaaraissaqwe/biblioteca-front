@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/gerenciaPessoa.css">
+    <title>Pessoas</title>
+</head>
+<body>
+    <header>
+        <h1 id=title>
+            Perfil de pessoas
+        </h1>
+        <nav>
+            <ul>
+                <li id="home">
+                    <a href="../pages/index.html">Página Inicial</a>
+                </li>
+    
+                <li id="list">
+                    <a href="../pages/index.html">Listar Pessoas</a>
+                </li>
+    
+                <li id="form">
+                    <a href="../pages/index.html">Cadastrar Pessoa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="container" >
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pessoa</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td_name">Pessoa 1</p></td>
+                        <td>
+                            <div class="acoes">
+                                <a class="link_acao" href="/detalhes/{{s.id}}">
+                                    <div>
+                                        <img src="../assets/user.png">
+                                        <p>Ver perfil</p>
+                                    </div>
+                                </a>
+                                <a class="link_acao" href="/detalhes/{{s.id}}">
+                                    <div>
+                                        <img src="../assets/bin.png">
+                                        <p>Deletar</p>
+                                    </div>
+                                </a>
+                                <a class="link_acao" href="/detalhes/{{s.id}}">
+                                    <div>
+                                        <img src="../assets/editing.png">
+                                        <p>Editar</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>
+    </main>
+</body>
+</html>
