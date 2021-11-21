@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/editarPessoa.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/main.js"></script>
+    <title>Edição de Pessoas</title>
+</head>
+<body id="editarPessoa">
+    <form>
+        <label>Nome</label>
+        <input id="nome" type='text'>
+        <label>CPF</label>
+        <input id="cpf" type='text'>
+        <label>Nascimento</label>
+        <input id="dataNascimento" type='date'>
+        <div class="group">
+            <label>Emails</label>
+            <div class='opContainer'>
+                <p id="rmEmails">-</p>
+                <p id="addEmails">+</p>
+            </div>
+        </div>
+        <div id="emails">
+            <input class="emails" type='text'>
+        </div>
+        <div class="group">
+            <label>Telefones</label>
+            <div class='opContainer'>
+                <p id="rmTelefones">-</p>
+                <p id="addTelefones">+</p>
+            </div>
+        </div>
+        <div id="telefones">
+            <input class="telefones" type='text'>
+        </div>
+        
+        <label>Profissão</label>
+        <select id="profissao">
+            <option value="Professor">Professor</option>
+            <option value="Aluno">Aluno</option>
+        </select>
+
+        <label>Endereço</label>
+        <input id="endereco" type='text'>
+        <label>Número</label>
+        <input id="numero" type='number'>
+        <label>CEP</label>
+        <input id="cep" type='text'>
+            <div class='opContainer'>
+        <button id=>Salvar</button>
+        <button id="back">Cancelar</button>
+    </div>
+    </form>
+
+</body>
+</html>
