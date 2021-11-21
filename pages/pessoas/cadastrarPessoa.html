@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/nav.css">
+    <link rel="stylesheet" href="../../style/pessoas/editarPessoa.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../scripts/pessoas/cadastrarPessoa.js"></script>
+    <title>Cadastrar Pessoas</title>
+</head>
+
+<body id="cadastrarPessoa">
+    <header>
+        <h1 id=title>
+            Perfil de pessoas
+        </h1>
+        <nav>
+            <ul>
+                <li id="home">
+                    <a href="../index.html">Página Inicial</a>
+                </li>
+
+                <li id="list">
+                    <a href="./gerenciaPessoa.html">Listar Pessoas</a>
+                </li>
+
+                <li id="form">
+                    <a href="./cadastrarPessoa.html">Cadastrar Pessoa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>
+            Cadastrar Pessoa
+        </h2>
+        <form>
+            <div class="group">
+                <div>
+                    <label>Nome</label>
+                    <input id="nome" type='text'>
+                </div>
+                <div>
+                    <label>CPF</label>
+                    <input id="cpf" type='text'>
+                </div>
+            </div>
+            <div class="group">
+                <div>
+                    <div class="duo">
+                        <label>Emails</label>
+                        <div class='opContainer'>
+                            <p id="rmEmails">-</p>
+                            <p id="addEmails">+</p>
+                        </div>
+                    </div>
+                    <div id="emails">
+                        <input class="emails" type='text'>
+                    </div>
+                </div>
+                <div>
+                    <div class="duo">
+                        <label>Telefones</label>
+                        <div class='opContainer'>
+                            <p id="rmTelefones">-</p>
+                            <p id="addTelefones">+</p>
+                        </div>
+                    </div>
+                    <div id="telefones">
+                        <input class="telefones" type='text'>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div>
+                    <label>Nascimento</label>
+                    <input id="dataNascimento" type='date'>
+                </div>
+                <div>
+                    <label>Profissão</label>
+                    <select id="profissao">
+                        <option value="Professor">Professor</option>
+                        <option value="Aluno">Aluno</option>
+                    </select>
+                </div>
+            </div>
+            <div class="group">
+                <div>
+                    <label>Endereço</label>
+                    <input id="endereco" type='text'>
+                </div>
+                <div>
+                    <label>Número</label>
+                    <input id="numero" type='number'>
+                </div>
+                <div>
+                    <label>CEP</label>
+                    <input id="cep" type='text'>
+                </div>
+            </div>
+            <div class='buttons'>
+                <button id="save">Salvar</button>
+                <button id="back">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>

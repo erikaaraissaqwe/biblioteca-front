@@ -1,0 +1,90 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+    border-radius: 8px;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+#addEmails, #rmEmails, #addTelefones, #rmTelefones{
+    cursor: pointer;
+}
+
+#emails, #telefones{
+    display: flex;
+    flex-direction: column;
+}
+
+.opContainer{
+    display: flex;
+    width: 150px;
+    height: 25px;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+input, select{
+    width: 200px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid #b8b8b8;
+    padding: 0px 5px;
+    margin-top: 10px;
+}
+
+#numero, #cep{
+    width: 100px;
+}
+
+label{
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.duo{
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+}
+
+.group{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons{
+    display: flex;
+    width: 70%;
+    height: 25px;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+button{
+    margin-top: 30px;
+    border: 0;
+    background-color: #CF0000;
+    color: #fff;
+    width: 80px;
+    height: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #f20000;
+    width: 83px;
+    height: 27px;
+}
