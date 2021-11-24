@@ -25,6 +25,25 @@ $(document).ready(function(){
             profissao: "Professor"
         },
     ]
+
+    var livros = [
+        {
+            isbn: "40028922",
+            titulo: "Salock, o maligno",
+            genero: "Fantasia",
+            autores: ["Robson Matos", "Matias Roberson"],
+            nPaginas: 500,
+        },
+        {
+            isbn: "22982004",
+            titulo: "Sangau do sul",
+            genero: "Aventura",
+            autores: ["Lucia Victoria", "Marina Rocha"],
+            nPaginas: 317,
+        },
+    ]
+
+    localStorage.setItem('livros', JSON.stringify(livros))
     localStorage.setItem('pessoas', JSON.stringify(pessoas))
 })
 

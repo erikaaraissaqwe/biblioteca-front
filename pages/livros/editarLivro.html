@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/nav.css">
+    <link rel="stylesheet" href="../../style/livros/editarLivro.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../scripts/livros/editarLivro.js"></script>
+    <title>Edição de Livros</title>
+</head>
+
+<body id="editarLivro">
+    <header>
+        <h1 id=title>
+            Perfil de livros
+        </h1>
+        <nav>
+            <ul>
+                <li id="home">
+                    <a href="../index.html">Página Inicial</a>
+                </li>
+    
+                <li id="list">
+                    <a href="./gerenciaLivro.html">Listar Livros</a>
+                </li>
+    
+                <li id="form">
+                    <a href="./cadastrarLivro.html">Cadastrar Livro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>
+            Editar Dados Livro
+        </h2>
+        <form>
+            <div class="group">
+                <div>
+                    <label>Título</label>
+                    <input id="titulo" type='text'>
+                </div>
+                <div>
+                    <label>ISBN</label>
+                    <input id="isbn" type='text'>
+                </div>
+            </div>
+            <div class="group">
+                <div>
+                    <label>Gênero</label>
+                    <input id="genero" type='text'>
+                </div>
+                <div>
+                    <label>Número de paginas</label>
+                    <input id="nPaginas" type='number'>
+                </div>
+            </div>
+            <div>
+                <div class="duo">
+                    <label>Autores</label>
+                    <div class='opContainer'>
+                        <p id="rmAutores">-</p>
+                        <p id="addAutores">+</p>
+                    </div>
+                </div>
+                <div id="autores">
+                    <input class="autores" type='text'>
+                </div>
+            </div>
+            <div class='buttons'>
+                <button id='save'>Salvar</button>
+                <button id="back">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -14,11 +14,9 @@ $(document).ready(function() {
 
     //Converte a data para o padrão certo
     function convertDate(date) {
-        console.log(date);
         var yyyy = date.getFullYear().toString();
         var mm = (date.getMonth() + 1).toString();
         var dd = (date.getDate() + 1).toString();
-        console.log(dd);
         var mmChars = mm.split('');
         var ddChars = dd.split('');
 
