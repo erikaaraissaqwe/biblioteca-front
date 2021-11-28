@@ -67,7 +67,7 @@ $(document).ready(function() {
         $('#telefones').empty();
         pessoa.telefones.forEach(telefone => {
             $('#telefones').append(
-                "<input class='emails' type='text' value=" + telefone + ">"
+                "<input class='telefones' type='text' value=" + telefone + ">"
             )
         });
         $("#endereco").val(pessoa.rua)
