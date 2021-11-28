@@ -16,7 +16,7 @@ $(document).ready(function() {
         //Adicionar mais campos de email
         $("#addEmails").click(function() {
             $("#emails").append(
-                "<input class='emails' type='text'>"
+                "<input class='emails' type='text' required>"
             );
         })
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
         //Adicionar campos de telefone
         $("#addTelefones").click(function() {
             $("#telefones").append(
-                "<input class='telefones' type='text'>"
+                "<input class='telefones' type='text' required>"
             );
         })
 

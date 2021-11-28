@@ -26,7 +26,7 @@ $(document).ready(function() {
     //Adicionar mais campos de email
     $("#addEmails").click(function() {
         $("#emails").append(
-            "<input class='emails' type='text'>"
+            "<input class='emails' type='text' required>"
         );
     })
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
     //Adicionar campos de telefone
     $("#addTelefones").click(function() {
         $("#telefones").append(
-            "<input class='telefones' type='text'>"
+            "<input class='telefones' type='text' required>"
         );
     })
 
@@ -61,13 +61,13 @@ $(document).ready(function() {
         $('#emails').empty();
         pessoa.emails.forEach(email => {
             $('#emails').append(
-                "<input class='emails' type='text' value=" + email + ">"
+                "<input class='emails' type='text' value=" + email + " required>"
             )
         });
         $('#telefones').empty();
         pessoa.telefones.forEach(telefone => {
             $('#telefones').append(
-                "<input class='telefones' type='text' value=" + telefone + ">"
+                "<input class='telefones' type='text' value=" + telefone + " required>"
             )
         });
         $("#endereco").val(pessoa.rua)

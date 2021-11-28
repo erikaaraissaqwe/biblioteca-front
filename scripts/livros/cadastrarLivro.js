@@ -16,7 +16,7 @@ $(document).ready(function() {
         //Adicionar mais campos de email
         $("#addAutores").click(function() {
             $("#autores").append(
-                "<input class='autores' type='text'>"
+                "<input class='autores' type='text' required>"
             );
         })
 
