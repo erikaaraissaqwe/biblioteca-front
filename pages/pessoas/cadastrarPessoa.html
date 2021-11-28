@@ -42,10 +42,12 @@
                 <div>
                     <label>Nome</label>
                     <input id="nome" type='text' required>
+                    <p id="reqNome"></p>
                 </div>
                 <div>
                     <label>CPF</label>
                     <input id="cpf" type='text' required>
+                    <p id="reqCpf"></p>
                 </div>
             </div>
             <div class="group">
@@ -59,6 +61,7 @@
                     </div>
                     <div id="emails">
                         <input class="emails" type='text' required>
+                        <p id="reqEmail"></p>
                     </div>
                 </div>
                 <div>
@@ -71,6 +74,7 @@
                     </div>
                     <div id="telefones">
                         <input class="telefones" type='text' required>
+                        <p id="reqTel"></p>
                     </div>
                 </div>
             </div>
@@ -78,6 +82,7 @@
                 <div>
                     <label>Nascimento</label>
                     <input id="dataNascimento" type='date'>
+                    <p id="reqData"></p>
                 </div>
                 <div>
                     <label>Profissão</label>
@@ -85,24 +90,28 @@
                         <option value="Professor">Professor</option>
                         <option value="Aluno">Aluno</option>
                     </select>
+                    <p id="reqProf"></p>
                 </div>
             </div>
             <div class="group">
                 <div>
                     <label>Endereço</label>
                     <input id="endereco" type='text' required>
+                    <p id="reqEnd"></p>
                 </div>
                 <div>
                     <label>Número</label>
                     <input id="numero" type='number' required>
+                    <p id="reqNum"></p>
                 </div>
                 <div>
                     <label>CEP</label>
                     <input id="cep" type='text' required>
+                    <p id="reqCep"></p>
                 </div>
             </div>
             <div class='buttons'>
-                <button id="save">Salvar</button>
+                <button type="submit" id="save">Salvar</button>
                 <button id="back">Cancelar</button>
             </div>
         </form>
