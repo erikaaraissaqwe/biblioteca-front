@@ -49,7 +49,7 @@ $(document).ready(function() {
             document.getElementById("reqPag").innerHTML = "Este campo é requerido."
             salvar = false;
         }
-        if(document.getElementById("autores").value === ""){
+        if(document.getElementsByClassName("autores")[0].value === ""){
             document.getElementById("reqAutores").innerHTML = "Este campo é requerido."
             salvar = false;
         }
