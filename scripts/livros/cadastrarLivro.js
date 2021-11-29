@@ -9,7 +9,7 @@ $(document).ready(function() {
             //salvar
         $('#save').click(function(e) {
             e.preventDefault();
-            if(true){
+            if(validar()){
                 alert("Pessoa salva com sucesso!");
                 window.location.replace("gerenciaLivro.html");
             }
