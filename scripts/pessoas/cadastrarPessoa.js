@@ -51,7 +51,7 @@ $(document).ready(function() {
             document.getElementById("reqNome").innerHTML = "Este campo é requerido."
             salvar = false;
         }
-        if(document.getElementsByClassName("emails").value === ""){
+        if(document.getElementsByClassName("emails")[0].value === ""){
             document.getElementById("reqEmail").innerHTML = "Este campo é requerido."
             salvar = false;
         }
@@ -67,7 +67,7 @@ $(document).ready(function() {
             document.getElementById("reqCpf").innerHTML = "Este campo é requerido."
             salvar = false;
         }
-        if(document.getElementsByClassName("telefones").value === ""){
+        if(document.getElementsByClassName("telefones")[0].value === ""){
             document.getElementById("reqTel").innerHTML = "Este campo é requerido."
             salvar = false;
         }
